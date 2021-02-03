@@ -54,7 +54,10 @@ class TestCalc:
     )
     def test_div(self, a, b, expect):
         # 调用div方法
-        result = self.calc.div(a, b)
-        if isinstance(result, float):
-            result = round(result, 2)
-        assert result == expect
+        if expect == "error":
+            raise Exception("除数不能为0")
+        else:
+            result = self.calc.div(a, b)
+            if isinstance(result, float):
+                result = round(result, 2)
+            assert result == expect
