@@ -35,8 +35,8 @@ class TestCalc:
     # 读取yaml文件内容进行参数化操作
     @pytest.mark.parametrize(
         "a, b, expect",
-        yaml.safe_load(open("../datas/calc.yaml"))["add"]["datas"],
-        ids=yaml.safe_load(open("../datas/calc.yaml"))["add"]["myid"]
+        yaml.safe_load(open("../datas/calc.yaml"))["datas"]["add_datas"],
+        ids=yaml.safe_load(open("../datas/calc.yaml"))["datas"]["myid"]
     )
     def test_add(self, a, b, expect):
         # 调用add方法
@@ -49,8 +49,8 @@ class TestCalc:
 
     @pytest.mark.parametrize(
         "a, b, expect",
-        yaml.safe_load(open("../datas/calc.yaml"))["div"]["datas"],
-        ids=yaml.safe_load(open("../datas/calc.yaml"))["div"]["myid"]
+        yaml.safe_load(open("../datas/calc.yaml"))["datas"]["div_datas"],
+        ids=yaml.safe_load(open("../datas/calc.yaml"))["datas"]["myid"]
     )
     def test_div(self, a, b, expect):
         # 调用div方法

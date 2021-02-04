@@ -1,5 +1,5 @@
-add:
-  datas:
+datas:
+  add_datas:
     - [1, 1, 2]
     - [1, 0.1, 1.1]
     - [1,0, 1]
@@ -15,24 +15,7 @@ add:
     - [-1, -1, -2]
     - [-1, -0.2, -1.2]
     - [-0.1, -0.1, -0.2]
-  myid:
-    - "int + int"
-    - "int + float"
-    - "int + 0"
-    - "int + negative int"
-    - "int + negative float"
-    - "float + float"
-    - "float + 0"
-    - "float + negative int"
-    - "float + negative float"
-    - "0 + 0"
-    - "0 + negative int"
-    - "0 + negative float"
-    - "negative int + negative int"
-    - "negative int + negative float"
-    - "netative float + negative float"
-div:
-  datas:
+  div_datas:
     - [1, 1, 1]
     - [1, 0.1, 10]
     - [1,0, "error"]
@@ -48,24 +31,7 @@ div:
     - [-1, -1, 1]
     - [-1, -0.2, 5]
     - [-0.1, -0.1, 1]
-  myid:
-    - "int / int"
-    - "int / float"
-    - "int / 0"
-    - "int / negative int"
-    - "int / negative float"
-    - "float / float"
-    - "float / 0"
-    - "float / negative int"
-    - "float / negative float"
-    - "0 / 0"
-    - "0 / negative int"
-    - "0 / negative float"
-    - "negative int / negative int"
-    - "negative int / negative float"
-    - "netative float / negative float"
-sub:
-  datas:
+  sub_datas:
     - [1, 1, 0]
     - [1, 0.1, 0.0]
     - [1, 0, 1]
@@ -81,24 +47,7 @@ sub:
     - [-1, -1, 0]
     - [-1, -0.2, -0.8]
     - [-0.1, -0.1, 0]
-  myid:
-    - "int - int"
-    - "int - float"
-    - "int - 0"
-    - "int - negative int"
-    - "int - negative float"
-    - "float - float"
-    - "float - 0"
-    - "float - negative int"
-    - "float - negative float"
-    - "0 - 0"
-    - "0 - negative int"
-    - "0 - negative float"
-    - "negative int - negative int"
-    - "negative int - negative float"
-    - "netative float - negative float"
-mul:
-  datas:
+  mul_datas:
     - [1, 1, 1]
     - [1, 0.1, 0.1]
     - [1, 0, 0]
@@ -115,18 +64,18 @@ mul:
     - [-1, -0.2, 0.2]
     - [-0.1, -0.1, 0.01]
   myid:
-    - "int * int"
-    - "int * float"
-    - "int * 0"
-    - "int * negative int"
-    - "int * negative float"
-    - "float * float"
-    - "float * 0"
-    - "float * negative int"
-    - "float * negative float"
-    - "0 * 0"
-    - "0 * negative int"
-    - "0 * negative float"
-    - "negative int * negative int"
-    - "negative int * negative float"
-    - "netative float * negative float"
+    - "int & int"
+    - "int & float"
+    - "int & 0"
+    - "int & negative int"
+    - "int & negative float"
+    - "float & float"
+    - "float & 0"
+    - "float & negative int"
+    - "float & negative float"
+    - "0 & 0"
+    - "0 & negative int"
+    - "0 & negative float"
+    - "negative int & negative int"
+    - "negative int & negative float"
+    - "netative float & negative float"
